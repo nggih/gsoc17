@@ -34,12 +34,16 @@ regul <- aracne2regulon('filtered_10.adj', 'Taylor_TF.txt', verbose = FALSE)
 # the other problem that will appear is to save the network.txt to network.adj.
 
 # GeWorkBench can't save it to adj directly.
+
+# This is from the manual. I modify the adj to filtered_10
 data(bcellViper, package = "bcellViper")
 adjfiletest <- system.file("aracne", "bcellaracne.adj", package = 'bcellViper')
 adjfile <- system.file("aracne", "filtered_10.adj", package = 'bcellViper')
 adjfiletest
+adjfile
 
 regul <- aracne2regulon(adjfiletest, dset, verbose = FALSE)
 
 head(dset)
 dset
+print(regul)
