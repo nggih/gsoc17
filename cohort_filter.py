@@ -31,7 +31,7 @@ def cohort_filter(target, output):
         row = line.rstrip('\n').split('\t')
         counter = 0
         for i in row:
-            if i == '0.0000' or i == 'NA' or i == 'nan':
+            if i == '0.0000' or i == 'NA' or i == 'nan' or i == "":
                 counter+=1
         percentage = counter/float((len(row)-1)) * 100
         if percentage < 10:
