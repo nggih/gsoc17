@@ -35,7 +35,7 @@ def cohort_filter(target, output):
                 counter+=1
         percentage = counter/float((len(row)-1)) * 100
         if percentage < 10:
-            o.write(row[0] + '\t'.join(row[1:]) + '\n')
+            o.write('\t'.join(row[0:]) + '\n')
     f.close()
     o.close()
     return 'Done!'
