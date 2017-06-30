@@ -68,7 +68,8 @@ def cohort_filter(target, output):
     o.close()
     return 'Done!'
 
-#print cohort_filter('ITOM_90f.txt','ITOM_90.txt')
+#This print of iter_cohort function will run on each dataset on the cohorts.
+#print iter_cohort(cohorts) 
 
 '''
 All the functions below is for checking purposes.
